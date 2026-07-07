@@ -4,14 +4,14 @@ Resolva crimes cibernéticos enquanto pratica comandos SQL.
 
 O site do jogo: https://sqlpd.com/
 
-1- 🎯**O que é SQL?**
+**1- 🎯O que é SQL?**
 
 SQL (Structured Query Language - Linguagem de Consulta Estruturada) é uma linguagem utilizada para acessar e manipular dados armazenados em bancos de dados relacionais.
 - Tabelas: Estrutura principal de armazenamento
 - Colunas: Campos que definem os tipos de dados
 - Linhas: Registros individuais da tabela
 
-2- 🏗️**Estrutura Básica**
+**2- 🏗️Estrutura Básica**
 
 ```
 SELECT nome_da_coluna
@@ -20,7 +20,7 @@ WHERE condição;
 ```
 > Importante: Toda instrução SQL deve terminar com ponto e vírgula (;)
 
-3- 📤**Selecionando Dados**
+**3- 📤Selecionando Dados**
 
 ```
 SELECT *
@@ -28,7 +28,7 @@ FROM funcionarios;
 ```
 > O asterisco (*) retorna todas as colunas da tabela.
 
-4- 🎯**Selecionar Colunas Específicas**
+**4- 🎯Selecionar Colunas Específicas**
 
 ```
 SELECT nome, idade
@@ -36,7 +36,7 @@ FROM alunos;
 ```
 > Especifique as colunas desejadas separadas por vírgula.
 
-5- 🏗️**Eliminar Duplicatas**
+**5- 🏗️Eliminar Duplicatas**
 
 ```
 SELECT DISTINCT nome
@@ -44,7 +44,7 @@ FROM alunos;
 ```
 > Use DISTINCT para remover valores duplicados.
 
-6- 🔍**Filtrando Dados com WHERE**
+**6- 🔍Filtrando Dados com WHERE**
 
 ```
 SELECT produto
@@ -53,7 +53,7 @@ WHERE codigo = 'ABC123';
 ```
 > A cláusula WHERE filtra registros baseados em condições específicas. Apenas registros que atendem à condição são retornados.
 
-7- ⚖️**Operadores de Comparação**
+**7- ⚖️Operadores de Comparação (=, <, >, IN, BETWEEN)**
 
 | Operador | Descrição | Exemplo |
 | --- | --- | --- |
@@ -84,8 +84,7 @@ WHERE productName < 'B';
 
 > Letras maiúsculas vêm antes das minúsculas.
 
-7.1 - **Operador relacional IN (=, <, >, IN, BETWEEN):** É um dos operadores de comparação que compara um valor a outro de forma exata ou matemática.
- 
+**7.1- Operador relacional IN:** É um dos operadores de comparação que compara um valor a outro de forma exata ou matemática.
 
 ```
 SELECT produto
@@ -93,4 +92,39 @@ FROM estoque
 WHERE quantidade IN (1, 5, 10);
 ```
 > Filtra por múltiplos valores possíveis. Retorna produtos onde quantidade é exatamente 1, 5 ou 10.
+
+**7.2- Operador BETWEEN (Intervalo)**
+
+```
+SELECT produto
+FROM estoque
+WHERE quantidade BETWEEN 5 AND 9;
+```
+Equivalente a:
+```
+SELECT produto
+FROM estoque
+WHERE quantidade >= 5 AND quantidade <= 9;
+```
+> Para valores fora do intervalo, use NOT BETWEEN.
+
+**8 📊 Ordenação e Limitação (ORDER BY, LIMIT):**
+
+
+**8.1- ORDER BY:** Ordenar Resultados em forma ascendente e descendente.
+```
+SELECT nome, idade
+FROM amigos
+ORDER BY nome ASC, idade DESC;
+```
+> Retorna a coluna nome em forma crescente e a coluna idade em forma decrescente.
+
+**8.2- LIMIT:** Restringir Número de Resultados.
+```
+SELECT nome, nota
+FROM notas_do_curso
+ORDER BY nota DESC
+LIMIT 5;
+```
+> Retorna os top 5 (as cinco linhas) com a coluna nota em formato decrescente.
 
