@@ -4,14 +4,14 @@ Resolva crimes cibernéticos enquanto pratica comandos SQL.
 
 O site do jogo: https://sqlpd.com/
 
-🎯**O que é SQL?**
+1- 🎯**O que é SQL?**
 
 SQL (Structured Query Language - Linguagem de Consulta Estruturada) é uma linguagem utilizada para acessar e manipular dados armazenados em bancos de dados relacionais.
 - Tabelas: Estrutura principal de armazenamento
 - Colunas: Campos que definem os tipos de dados
 - Linhas: Registros individuais da tabela
 
-🏗️**Estrutura Básica**
+2- 🏗️**Estrutura Básica**
 
 ```
 SELECT nome_da_coluna
@@ -20,7 +20,7 @@ WHERE condição;
 ```
 > Importante: Toda instrução SQL deve terminar com ponto e vírgula (;)
 
-📤**Selecionando Dados**
+3- 📤**Selecionando Dados**
 
 ```
 SELECT *
@@ -28,7 +28,7 @@ FROM funcionarios;
 ```
 > O asterisco (*) retorna todas as colunas da tabela.
 
-🎯**Selecionar Colunas Específicas**
+4- 🎯**Selecionar Colunas Específicas**
 
 ```
 SELECT nome, idade
@@ -36,7 +36,7 @@ FROM alunos;
 ```
 > Especifique as colunas desejadas separadas por vírgula.
 
-🏗️**Eliminar Duplicatas**
+5- 🏗️**Eliminar Duplicatas**
 
 ```
 SELECT DISTINCT nome
@@ -44,7 +44,7 @@ FROM alunos;
 ```
 > Use DISTINCT para remover valores duplicados.
 
-🔍**Filtrando Dados com WHERE**
+6- 🔍**Filtrando Dados com WHERE**
 
 ```
 SELECT produto
@@ -53,7 +53,7 @@ WHERE codigo = 'ABC123';
 ```
 > A cláusula WHERE filtra registros baseados em condições específicas. Apenas registros que atendem à condição são retornados.
 
-⚖️**Operadores de Comparação**
+7- ⚖️**Operadores de Comparação**
 
 | Operador | Descrição | Exemplo |
 | --- | --- | --- |
@@ -84,7 +84,7 @@ WHERE productName < 'B';
 
 > Letras maiúsculas vêm antes das minúsculas.
 
-📤**Operador relacional IN (=, <, >, IN, BETWEEN):** É um dos operadores de comparação que compara um valor a outro de forma exata ou matemática.
+7.1 - **Operador relacional IN (=, <, >, IN, BETWEEN):** É um dos operadores de comparação que compara um valor a outro de forma exata ou matemática.
  
 
 ```
