@@ -13,8 +13,8 @@ SQL (Structured Query Language - Linguagem de Consulta Estruturada) é uma lingu
 
 🏗️**Estrutura Básica**
 
-´´´
+```
 SELECT nome_da_coluna
 FROM nome_da_tabela
 WHERE condição;
-´´´
+```
