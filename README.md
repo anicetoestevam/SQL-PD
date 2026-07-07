@@ -18,3 +18,4 @@ SELECT nome_da_coluna
 FROM nome_da_tabela
 WHERE condição;
 ```
+> Importante: Toda instrução SQL deve terminar com ponto e vírgula (;)
