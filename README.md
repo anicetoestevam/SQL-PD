@@ -4,7 +4,7 @@ Resolva crimes cibernéticos enquanto pratica comandos SQL.
 
 O site do jogo: https://sqlpd.com/
 
-🎯##**O que é SQL?**
+🎯##**O que é SQL?**##
 
 SQL (Structured Query Language - Linguagem de Consulta Estruturada) é uma linguagem utilizada para acessar e manipular dados armazenados em bancos de dados relacionais.
 - Tabelas: Estrutura principal de armazenamento
