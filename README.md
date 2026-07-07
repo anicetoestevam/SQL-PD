@@ -108,7 +108,7 @@ WHERE quantidade >= 5 AND quantidade <= 9;
 ```
 > Para valores fora do intervalo, use NOT BETWEEN.
 
-**8 📊 Ordenação e Limitação (ORDER BY, LIMIT):**
+**8- 📊 Ordenação e Limitação (ORDER BY, LIMIT):**
 
 
 **8.1- ORDER BY:** Ordenar Resultados em forma ascendente e descendente.
