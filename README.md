@@ -80,8 +80,9 @@ WHERE productName < 'B';
 ```
 ⚠️**Importante:**
 
-> Strings devem estar entre aspas simples: 'texto'
-> Letras maiúsculas vêm antes das minúsculas
+> Strings devem estar entre aspas simples: 'texto';
+
+> Letras maiúsculas vêm antes das minúsculas.
 
 📤**Operador relacional IN (=, <, >, IN, BETWEEN):** É um dos operadores de comparação que compara um valor a outro de forma exata ou matemática.
  
